@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaTrack Smart Water Bottle</title>
+    <!-- Bootstrap CSS -->
+    <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white text-center"style="background-color: #007bff;">
+        <img src=".//Hero image.png" class="img-fluid mb-3" alt="Hero Image"  width="800">
+        <div class="hero-text">
+            
+            <h1 class="display-3">Stay Hydrated with AquaTrack</h1>
+            <p>Your personalized hydration assistant, designed to keep you healthy and active.</p>
+            <a href="#product" class="btn btn-light btn-lg">Explore Now</a>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section id="product" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="display-4">AquaTrack Smart Water Bottle</h2>
+            <p class="lead">Hydration meets innovation.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <img src=".//AquaTrack smart water bottle.webp" class="img-fluid" alt="AquaTrack Smart Water Bottle">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="my-4">Price: $99.99</h3>
+                    <p>The AquaTrack smart water bottle tracks your hydration, reminds you to drink, and monitors water temperature. Stay fit and healthy with cutting-edge technology!</p>
+                    <button class="btn btn-primary btn-lg" id="addToCart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="display-4 text-center">Why Choose AquaTrack?</h2>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <img src=".//feature 1.jpg" alt="Feature 1" class="img-fluid mb-3">
+                    <h5>Smart Hydration Tracking</h5>
+                    <p>Monitor your daily water intake effortlessly.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src=".//feature 2.jpg" alt="Feature 2" class="img-fluid mb-3">
+                    <h5>Temperature Control</h5>
+                    <p>Keep your drink at the perfect temperature.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src=".//feature 3.jpg" alt="Feature 3" class="img-fluid mb-3">
+                    <h5>Eco-Friendly Design</h5>
+                    <p>Durable, lightweight, and sustainable materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Item Added to Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Your AquaTrack Smart Water Bottle has been added to the cart. Proceed to checkout or continue shopping.
+                </div>
+                <div class="modal-footer">
+                    <a href="#checkout" class="btn btn-success">Go to Checkout</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2025 AquaTrack. All rights reserved.</p>
+        <p><a href="mailto:ambiguty009@gmail.com" class="text-white">Contact Us</a> | <a href="#privacy" class="text-white">Privacy Policy</a> | <a href="#terms" class="text-white">Terms & Conditions</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript for Add to Cart Modal
+        document.getElementById("addToCart").addEventListener("click", function () {
+            var myModal = new bootstrap.Modal(document.getElementById('cartModal'), {
+                keyboard: false
+            });
+            myModal.show();
+        });
+    </script>
+</body>
+
+</html>

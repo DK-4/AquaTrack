@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    background-color: blue; /* Blue background for the hero section */
+    padding: 50px 0; /* Padding for the hero section */
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Product Section */
+#product {
+    background-color: #f1f1f1;
+}
+
+#product h2 {
+    color: #343a40; /* Dark gray color for the product title */
+}
+
+#product .btn {
+    background-color: #001f3d; /* Navy Blue */
+    color: white;
+}
+
+/* Features Section */
+#features {
+    background-color: #ffffff; /* White background for features section */
+}
+
+#features h2 {
+    color: #343a40; /* Dark gray color for features title */
+}
+
+/* Feature Cards */
+#features .col-md-4 {
+    margin-bottom: 30px; /* Space between feature cards */
+}
+
+/* Footer */
+footer {
+    background-color: #001f3d; /* Navy Blue */
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 0; /* Remove border radius for modal */
+}
+
+.modal-header {
+    background-color: #007bff; /* Blue background for modal header */
+    color: white;
+}
+
+.modal-footer .btn-success {
+    background-color: #28a745; /* Green for checkout button */
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d; /* Gray for continue shopping button */
+}
